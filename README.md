@@ -16,7 +16,9 @@ protected override void OnModelCreating(ModelBuilder modelBuilder)
 
 Then call the functions as part of a query:
 ```csharp
-var result = context.Set<SomeEntity>().Select(e => new { e.Id, e.Value, ValueInt32 = TryParse.Int32(e.Value) }).ToList();
+var result = context.Set<SomeEntity>()
+    .Select(e => new { e.Id, e.Value, ValueInt32 = TryParse.Int32(e.Value) })
+    .ToList();
 ```
 
 This will generate the expected SQL:
