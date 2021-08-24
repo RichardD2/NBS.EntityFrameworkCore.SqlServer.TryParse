@@ -5,7 +5,7 @@
 ```powershell
 Install-Package NBS.EntityFrameworkCore.SqlServer.TryParse
 ```
-**Need to wait until the "reserved package ID" error to be resolved...**
+**Need to wait until the "reserved package ID" error is resolved...**
 
 Register the functions in your `DbContext`'s `OnModelCreating` method:
 ```csharp
