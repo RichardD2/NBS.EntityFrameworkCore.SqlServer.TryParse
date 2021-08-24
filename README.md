@@ -1,11 +1,10 @@
 # EF Core 3.x support for SQL Server's `TRY_PARSE` function
 ## Use
 
-~~Install the NuGet package:~~
+Install the NuGet package:
 ```powershell
-Install-Package NBS.EntityFrameworkCore.SqlServer.TryParse
+Install-Package NevaleeBusinessSolutions.EntityFrameworkCore.SqlServer.TryParse
 ```
-**Need to wait until the "reserved package ID" error is resolved...**
 
 Register the functions in your `DbContext`'s `OnModelCreating` method:
 ```csharp
