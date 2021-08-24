@@ -1,16 +1,18 @@
 # EF Core 3.x support for SQL Server's `TRY_PARSE` function
 ## Use
-Install the NuGet package:
+
+~~Install the NuGet package:~~
 ```powershell
 Install-Package NBS.EntityFrameworkCore.SqlServer.TryParse
 ```
+**Need to wait until the "reserved package ID" error to be resolved...**
 
 Register the functions in your `DbContext`'s `OnModelCreating` method:
 ```csharp
 protected override void OnModelCreating(ModelBuilder modelBuilder)
 {
     base.OnModelCreating(modelBuilder);
-	TryParse.Register(modelBuilder);
+    TryParse.Register(modelBuilder);
 }
 ```
 
@@ -48,14 +50,14 @@ internal sealed class TryParseArgumentExpression : SqlExpression
     private readonly SqlFragmentExpression _asExpression;
 
     public TryParseArgumentExpression(Type type, SqlExpression sourceExpression, string sqlTypeName) 
-	    : base(type, sourceExpression.TypeMapping)
+        : base(type, sourceExpression.TypeMapping)
     {
         _sourceExpression = sourceExpression ?? throw new ArgumentNullException(nameof(sourceExpression));
         _asExpression = new SqlFragmentExpression($" AS {sqlTypeName}");
     }
 
     private TryParseArgumentExpression(Type type, SqlExpression sourceExpression, SqlFragmentExpression asExpression) 
-	    : base(type, sourceExpression.TypeMapping)
+        : base(type, sourceExpression.TypeMapping)
     {
         _sourceExpression = sourceExpression ?? throw new ArgumentNullException(nameof(sourceExpression));
         _asExpression = asExpression ?? throw new ArgumentNullException(nameof(asExpression));
