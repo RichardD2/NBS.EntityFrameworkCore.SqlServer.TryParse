@@ -2,8 +2,20 @@
 ## Use
 
 Install the NuGet package:
+
+### EF Core 3.1.x
 ```powershell
 Install-Package NevaleeBusinessSolutions.EntityFrameworkCore.SqlServer.TryParse
+```
+
+### EF Core 5.x
+```powershell
+Install-Package NevaleeBusinessSolutions.EntityFrameworkCore.SqlServer.TryParse.EF5
+```
+
+### EF Core 6.x
+```powershell
+Install-Package NevaleeBusinessSolutions.EntityFrameworkCore.SqlServer.TryParse.EF6
 ```
 
 Register the functions in your `DbContext`'s `OnModelCreating` method:
