@@ -143,7 +143,7 @@ public static void Register(ModelBuilder modelBuilder)
 ---
 *NB:* For EF Core 5.x, the `SqlFunctionExpression.Create` method is no longer supported. The registration code needs to be changed to:
 
-```chsarp
+```csharp
 private static readonly bool[] ArgumentsPropagateNullability = { true };
 
 public static void Register(ModelBuilder modelBuilder)
