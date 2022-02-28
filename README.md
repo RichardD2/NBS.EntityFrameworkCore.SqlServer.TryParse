@@ -97,7 +97,31 @@ internal sealed class TryParseArgumentExpression : SqlExpression
 }
 ```
 
+---
+*NB:* For EF Core 5.x, this expression has to inherit from `SqlUnaryExpression` to avoid an "Unhandled expression" exception from the new `SqlNullabilityProcessor`:
+
+```csharp
+internal sealed class TryParseArgumentExpression : SqlUnaryExpression
+{
+    ...
+    public TryParseArgumentExpression(Type type, SqlExpression sourceExpression, string sqlTypeName) 
+        : base(ExpressionType.Convert, sourceExpression, type, sourceExpression.TypeMapping)
+    {
+        ...
+    }
+    
+    private TryParseArgumentExpression(Type type, SqlExpression sourceExpression, SqlFragmentExpression asExpression) 
+        : base(ExpressionType.Convert, sourceExpression, type, sourceExpression.TypeMapping)
+    {
+        ...
+    }
+```
+
+The `Print` method also needs to be changed from `public` to `protected`.
+---
+
 It was then possible to use this custom expression, along with an internal attribute which specifies the mapped SQL type name, to register the custom functions:
+
 ```csharp
 public static void Register(ModelBuilder modelBuilder)
 {
@@ -115,6 +139,30 @@ public static void Register(ModelBuilder modelBuilder)
     }
 }
 ```
+
+---
+*NB:* For EF Core 5.x, the `SqlFunctionExpression.Create` method is no longer supported. The registration code needs to be changed to:
+
+```chsarp
+private static readonly bool[] ArgumentsPropagateNullability = { true };
+
+public static void Register(ModelBuilder modelBuilder)
+{
+    foreach (var dbFunc in typeof(TryParse).GetMethods(BindingFlags.Public | BindingFlags.Static))
+    {
+        var attribute = dbFunc.GetCustomAttribute<SqlTypeNameAttribute>();
+        if (attribute is null) continue;
+
+        modelBuilder.HasDbFunction(dbFunc).HasTranslation(args =>
+        {
+            var newArgs = args.ToList();
+            newArgs[0] = new TryParseArgumentExpression(dbFunc.ReturnType, newArgs[0], attribute.SqlTypeName);
+            return new SqlFunctionExpression("TRY_PARSE", newArgs, true, ArgumentsPropagateNullability, dbFunc.ReturnType, null);
+        });
+    }
+}
+```
+---
 
 ## License
 
