@@ -13,10 +13,11 @@
 		<PackageReference Include="MSTest.TestAdapter" Version="2.1.0" />
 		<PackageReference Include="MSTest.TestFramework" Version="2.1.0" />
 		<PackageReference Include="coverlet.collector" Version="1.2.0" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.*" />
 	</ItemGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\NBS.EntityFrameworkCore.SqlServer.TryParse\NBS.EntityFrameworkCore.SqlServer.TryParse.csproj" />
+		<ProjectReference Include="..\NBS.EntityFrameworkCore.SqlServer.TryParse-EF6\NBS.EntityFrameworkCore.SqlServer.TryParse-EF6.csproj" />
 	</ItemGroup>
 
 </Project>

@@ -1,11 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31613.86
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NBS.EntityFrameworkCore.SqlServer.TryParse", "NBS.EntityFrameworkCore.SqlServer.TryParse\NBS.EntityFrameworkCore.SqlServer.TryParse.csproj", "{4209CA51-7A84-4DBE-A0E4-1E19AC064C1D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NBS.EntityFrameworkCore.SqlServer.TryParse", "NBS.EntityFrameworkCore.SqlServer.TryParse\NBS.EntityFrameworkCore.SqlServer.TryParse.csproj", "{4209CA51-7A84-4DBE-A0E4-1E19AC064C1D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NBS.EntityFrameworkCore.SqlServer.TryParse.Tests", "NBS.EntityFrameworkCore.SqlServer.TryParse.Tests\NBS.EntityFrameworkCore.SqlServer.TryParse.Tests.csproj", "{4587B026-DCE5-4BEE-833B-5A9BAA55D544}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NBS.EntityFrameworkCore.SqlServer.TryParse.Tests", "NBS.EntityFrameworkCore.SqlServer.TryParse.Tests\NBS.EntityFrameworkCore.SqlServer.TryParse.Tests.csproj", "{4587B026-DCE5-4BEE-833B-5A9BAA55D544}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NBS.EntityFrameworkCore.SqlServer.TryParse.Tests-EF5", "NBS.EntityFrameworkCore.SqlServer.TryParse.Tests-EF5\NBS.EntityFrameworkCore.SqlServer.TryParse.Tests-EF5.csproj", "{1F3C0A31-71CE-4D1B-97DB-2E93E54D572D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NBS.EntityFrameworkCore.SqlServer.TryParse.Tests-EF6", "NBS.EntityFrameworkCore.SqlServer.TryParse.Tests-EF6\NBS.EntityFrameworkCore.SqlServer.TryParse.Tests-EF6.csproj", "{F16CD17F-CB72-43D0-82A2-6CE56B3E1031}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NBS.EntityFrameworkCore.SqlServer.TryParse-EF5", "NBS.EntityFrameworkCore.SqlServer.TryParse-EF5\NBS.EntityFrameworkCore.SqlServer.TryParse-EF5.csproj", "{CBD85062-F67C-4AC7-8A0F-AE99F4BA1045}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NBS.EntityFrameworkCore.SqlServer.TryParse-EF6", "NBS.EntityFrameworkCore.SqlServer.TryParse-EF6\NBS.EntityFrameworkCore.SqlServer.TryParse-EF6.csproj", "{AEA36691-1A83-4408-8A0C-30AAB6E27F72}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +29,22 @@ Global
 		{4587B026-DCE5-4BEE-833B-5A9BAA55D544}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4587B026-DCE5-4BEE-833B-5A9BAA55D544}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4587B026-DCE5-4BEE-833B-5A9BAA55D544}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F3C0A31-71CE-4D1B-97DB-2E93E54D572D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F3C0A31-71CE-4D1B-97DB-2E93E54D572D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F3C0A31-71CE-4D1B-97DB-2E93E54D572D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F3C0A31-71CE-4D1B-97DB-2E93E54D572D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F16CD17F-CB72-43D0-82A2-6CE56B3E1031}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F16CD17F-CB72-43D0-82A2-6CE56B3E1031}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F16CD17F-CB72-43D0-82A2-6CE56B3E1031}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F16CD17F-CB72-43D0-82A2-6CE56B3E1031}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBD85062-F67C-4AC7-8A0F-AE99F4BA1045}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBD85062-F67C-4AC7-8A0F-AE99F4BA1045}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBD85062-F67C-4AC7-8A0F-AE99F4BA1045}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBD85062-F67C-4AC7-8A0F-AE99F4BA1045}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEA36691-1A83-4408-8A0C-30AAB6E27F72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEA36691-1A83-4408-8A0C-30AAB6E27F72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEA36691-1A83-4408-8A0C-30AAB6E27F72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEA36691-1A83-4408-8A0C-30AAB6E27F72}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
