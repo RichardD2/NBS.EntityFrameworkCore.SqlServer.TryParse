@@ -7,13 +7,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NBS.EntityFrameworkCore.Sql
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NBS.EntityFrameworkCore.SqlServer.TryParse.Tests", "NBS.EntityFrameworkCore.SqlServer.TryParse.Tests\NBS.EntityFrameworkCore.SqlServer.TryParse.Tests.csproj", "{4587B026-DCE5-4BEE-833B-5A9BAA55D544}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NBS.EntityFrameworkCore.SqlServer.TryParse.Tests-EF5", "NBS.EntityFrameworkCore.SqlServer.TryParse.Tests-EF5\NBS.EntityFrameworkCore.SqlServer.TryParse.Tests-EF5.csproj", "{1F3C0A31-71CE-4D1B-97DB-2E93E54D572D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NBS.EntityFrameworkCore.SqlServer.TryParse.Tests-EF5", "NBS.EntityFrameworkCore.SqlServer.TryParse.Tests-EF5\NBS.EntityFrameworkCore.SqlServer.TryParse.Tests-EF5.csproj", "{1F3C0A31-71CE-4D1B-97DB-2E93E54D572D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NBS.EntityFrameworkCore.SqlServer.TryParse.Tests-EF6", "NBS.EntityFrameworkCore.SqlServer.TryParse.Tests-EF6\NBS.EntityFrameworkCore.SqlServer.TryParse.Tests-EF6.csproj", "{F16CD17F-CB72-43D0-82A2-6CE56B3E1031}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NBS.EntityFrameworkCore.SqlServer.TryParse.Tests-EF6", "NBS.EntityFrameworkCore.SqlServer.TryParse.Tests-EF6\NBS.EntityFrameworkCore.SqlServer.TryParse.Tests-EF6.csproj", "{F16CD17F-CB72-43D0-82A2-6CE56B3E1031}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NBS.EntityFrameworkCore.SqlServer.TryParse-EF5", "NBS.EntityFrameworkCore.SqlServer.TryParse-EF5\NBS.EntityFrameworkCore.SqlServer.TryParse-EF5.csproj", "{CBD85062-F67C-4AC7-8A0F-AE99F4BA1045}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NBS.EntityFrameworkCore.SqlServer.TryParse-EF5", "NBS.EntityFrameworkCore.SqlServer.TryParse-EF5\NBS.EntityFrameworkCore.SqlServer.TryParse-EF5.csproj", "{CBD85062-F67C-4AC7-8A0F-AE99F4BA1045}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NBS.EntityFrameworkCore.SqlServer.TryParse-EF6", "NBS.EntityFrameworkCore.SqlServer.TryParse-EF6\NBS.EntityFrameworkCore.SqlServer.TryParse-EF6.csproj", "{AEA36691-1A83-4408-8A0C-30AAB6E27F72}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NBS.EntityFrameworkCore.SqlServer.TryParse-EF6", "NBS.EntityFrameworkCore.SqlServer.TryParse-EF6\NBS.EntityFrameworkCore.SqlServer.TryParse-EF6.csproj", "{AEA36691-1A83-4408-8A0C-30AAB6E27F72}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NBS.EntityFrameworkCore.SqlServer.TryParse.Tests-EF7", "NBS.EntityFrameworkCore.SqlServer.TryParse.Tests-EF7\NBS.EntityFrameworkCore.SqlServer.TryParse.Tests-EF7.csproj", "{DC07615B-B4B8-445D-8463-6D4261F6B725}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{AEA36691-1A83-4408-8A0C-30AAB6E27F72}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AEA36691-1A83-4408-8A0C-30AAB6E27F72}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AEA36691-1A83-4408-8A0C-30AAB6E27F72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC07615B-B4B8-445D-8463-6D4261F6B725}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC07615B-B4B8-445D-8463-6D4261F6B725}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC07615B-B4B8-445D-8463-6D4261F6B725}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC07615B-B4B8-445D-8463-6D4261F6B725}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
