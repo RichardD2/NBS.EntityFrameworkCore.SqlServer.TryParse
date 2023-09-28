@@ -5,6 +5,8 @@ namespace NBS.EntityFrameworkCore.SqlServer.Tests
 {
 	public class TestDbContext : DbContext
 	{
+		public const string DefaultConnectionString = "Server=(localdb)\\mssqllocaldb;Database=NBS.EntityFrameworkCore.SqlServer.Tests;Trusted_Connection=True;";
+
 		public TestDbContext(DbContextOptions<TestDbContext> options) : base(options)
 		{
 		}
