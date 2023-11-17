@@ -53,7 +53,8 @@ namespace NBS.EntityFrameworkCore.SqlServer
 				{
 					var newArgs = args.ToList();
 					newArgs[0] = new TryParseArgumentExpression(dbFunc.ReturnType, newArgs[0], attribute.SqlTypeName);
-					return new SqlFunctionExpression("TRY_PARSE", newArgs, true, ArgumentsPropagateNullability, dbFunc.ReturnType, null);
+					Type returnType = Nullable.GetUnderlyingType(dbFunc.ReturnType) ?? dbFunc.ReturnType;
+					return new SqlFunctionExpression("TRY_PARSE", newArgs, true, ArgumentsPropagateNullability, returnType, null);
 				});
 			}
 		}

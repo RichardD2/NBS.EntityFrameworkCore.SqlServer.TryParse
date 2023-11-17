@@ -21,7 +21,7 @@
 		<NeutralLanguage>en-GB</NeutralLanguage>
 		<Description>EF Core methods to call SQL Server's TRY_PARSE function.</Description>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-		<Version>6.0.1</Version>
+		<Version>6.0.2</Version>
 		<RepositoryUrl>https://github.com/RichardD2/NBS.EntityFrameworkCore.SqlServer.TryParse</RepositoryUrl>
 		<RepositoryType>GitHub</RepositoryType>
 		<PackageProjectUrl>https://github.com/RichardD2/NBS.EntityFrameworkCore.SqlServer.TryParse</PackageProjectUrl>
